@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Sparkles, Eye } from 'lucide-react';
 
 const Login = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-black flex items-center justify-center p-4 relative overflow-hidden">
       {/* Animated background orbs */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-      <div className="absolute top-40 right-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-2000"></div>
-      <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-4000"></div>
+      <div className="absolute top-40 right-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-2000"></div>
+      <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse delay-4000"></div>
       
       {/* Grid overlay */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px] opacity-10"></div>
       
       {/* Login container */}
       <div className="relative z-10 w-full max-w-md">
@@ -122,7 +123,7 @@ const Login = () => {
 
         {/* Floating particles effect */}
         <div className="absolute -top-4 -right-4 w-20 h-20 bg-purple-500 rounded-full filter blur-2xl opacity-50 animate-bounce"></div>
-        <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500 rounded-full filter blur-2xl opacity-50 animate-bounce" style={{animationDelay: '1s'}}></div>
+        <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500 rounded-full filter blur-2xl opacity-50 animate-bounce delay-1000"></div>
       </div>
     </div>
   )

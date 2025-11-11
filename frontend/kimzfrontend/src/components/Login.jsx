@@ -8,7 +8,7 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post('http://localhost:5000/login', values)
+      .post('http://localhost:3000/auth/adminlogin', values)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   };
